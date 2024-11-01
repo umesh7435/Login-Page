@@ -1,0 +1,231 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 40%;
+}
+
+
+label {
+    width: 100px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-weight: bold;
+    border-radius: 10px;
+    padding-left: 40%;
+}
+
+/* For submit button */
+/* From Uiverse.io by KINGFRESS */
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.btn span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #0c66ed;
+    border-radius: 50%;
+    transition: .6s ease;
+}
+
+.btn span:nth-child(6) {
+    position: relative;
+}
+
+.btn span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+}
+
+.btn span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+}
+
+.btn span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+}
+
+.btn span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+}
+
+.btn span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+}
+
+.btn:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+}
+
+
+/* For reset button */
+.btn2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #171717;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.btn2 span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #ed0c0c;
+    border-radius: 50%;
+    transition: .6s ease;
+}
+
+.btn2 span:nth-child(6) {
+    position: relative;
+}
+
+.btn2 span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+}
+
+.btn2 span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+}
+
+.btn2 span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+}
+
+.btn2 span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+}
+
+.btn2 span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+}
+
+.btn2:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+}
+
+
+/* Dark mode button */
+/* From Uiverse.io by cuzpq */
+.theme-checkbox {
+    --toggle-size: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* Light mode (default) */
+body {
+    background-color: white;
+    color: black;
+}
+
+input[type="text"] {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode input[type="text"] {
+    background-color: #333;
+    color: #f1f1f1;
+    border: 1px solid #444;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: white;
+}
